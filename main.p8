@@ -7,6 +7,7 @@ __lua__
 #include src/helpers.p8
 #include src/factory.p8
 #include src/word.p8
+#include src/player.p8
 #include src/menu.p8
 #include src/game.p8
 

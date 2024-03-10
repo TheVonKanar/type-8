@@ -35,6 +35,7 @@ function c_factory:update()
             end
 
             deli(self.words, i)
+            _player:hit(#word.txt)
         end
 
         -- win

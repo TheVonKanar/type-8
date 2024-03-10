@@ -4,6 +4,7 @@ __lua__
 
 _bg = {}
 _factory = nil
+_player = nil
 
 function start_game()
     _state = _game
@@ -13,12 +14,14 @@ function start_game()
     poke(24365, 1)
 
     _factory = c_factory:new()
+    _player = c_player:new()
 end
 
 function update_game()
     catch_input()
 
     _factory:update()
+    _player:update()
 end
 
 function draw_game()
@@ -27,8 +30,7 @@ function draw_game()
     -- draw_bg()
 
     _factory:draw()
-
-    spr(1, 60, 120)
+    _player:draw()
 end
 
 -----------
